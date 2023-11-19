@@ -7,6 +7,44 @@ body{
     line-height: 1.5;
     letter-spacing: 0.02;
 }
+h1, h2, h3, h4, h5, h6, p{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+ul, ol{
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+img{
+    display:block;
+}
+.visually-hidden{
+    position:absolute;
+    width:1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+    clip-path:inset(100%);
+    clip: rect(0 0 0 0);
+    overflow:hidden;
+}
+.container{
+    width: 1158px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    justify-content: space-between;
+}
+.header-container{
+    display: flex;
+    padding-top: 24px;
+        padding-bottom: 24px;
+}
 .page-header{
     background-color: #FFF;
 }
@@ -19,6 +57,7 @@ body{
         /* 116.667% */
         letter-spacing: 0.03em;
         text-transform: uppercase;
+        margin-right: 76px;
 }
 .logo-part{  /*перша чатина логотипу колір*/
     color: #2E2F42;
@@ -26,10 +65,19 @@ body{
 .down-logo{
     color: #F4F4FD;
 }
+.top-nav{
+    display: flex;
+    
+}
 .menu, .contact-list, .features-list, .team-list, .portfolio-list{
 list-style-type: none;
 }
-.menu-item{ /*меню навігації*/
+
+.menu, .contact-list{
+    display: flex;
+    column-gap: 40px;
+}
+.menu-link{ /*меню навігації*/
     color:#2E2F42;
     /* Body Medium */
     font-size: 16px;
@@ -38,11 +86,11 @@ list-style-type: none;
     /* 150% */
     letter-spacing: 0.02em;
 }
-.menu-item:hover{
+.menu-link:hover{
     color:  #404BBF;
     text-decoration-line: underline;
 }
-.menu-item:focus{
+.menu-link:focus{
     color: #404BBF;
 }
 .contacts{
@@ -67,28 +115,51 @@ list-style-type: none;
 .banner, .down-part{
     background: #2E2F42;
 }
+.banner{
+    padding-top: 188px;
+    padding-bottom: 188px;
+}
 .page-title{ /*Заголовок на банері зверху*/
     color: #FFF;
-    /* Header 1 */
+    width: 496px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 48px;
     text-align: center;
     font-size: 56px;
     font-weight: 700;
     line-height: 1.07;
     /* 107.143% */
     letter-spacing: 0.02em;
+   
 }
-
+.features-list{
+    display: flex;
+    column-gap: 24px;
+}
+.features-list-item{
+    width: calc((100%-72)/4);
+}
+.features-name{
+    margin-bottom: 8px;
+}
 .button{ /*Кнопка під заголовком*/
     background:  #4D5AE5;
     color: #FFF;
-    /* Button Text */
+    display: block;
     font-size: 16px;
     font-weight: 500;
     line-height: 1.5;
     /* 150% */
     letter-spacing: 0.04em;
+    margin-right: auto;
+        margin-left: auto;
 }
 
+.section{
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
 .features-name, .team-name, .portfolio-name{
     color:#2E2F42;
     font-size: 20px;
@@ -101,9 +172,9 @@ list-style-type: none;
 .team{
     background: #F4F4FD;
 }
-.features-title, .team-title, .portfolio-title{
+.section-title{    /* Header 2 */
     color:#2E2F42;
-    /* Header 2 */
+    
     font-size: 36px;
     text-align: center;
     font-weight: 700;
@@ -111,12 +182,34 @@ list-style-type: none;
     /* 111.111% */
     letter-spacing: 0.02em;
     text-transform: capitalize;
+    margin-bottom: 72px;
 }
 
-
+.team-list{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 24px;
+}
 .team-item{
 background:#FFF;
+padding-bottom: 32px;
+border-radius: 0px 0px 4px 4px;
+box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+width: calc((100%-72px)/4);
 }
+
+
+.team-pic{
+    margin-bottom: 32px;
+}
+.team-name{
+    margin-bottom: 8px;
+    text-align: center;
+}
+.team-job{
+text-align: center;
+}
+
 .features-text, .team-job, .portfolio-text, .down-text{
     /* Body */
     font-size: 16px;
@@ -127,10 +220,29 @@ background:#FFF;
 
 .down-text{
     color: #F4F4FD;
+    width: 264px;
+}
+.portfolio-title{
+    padding-top: 115px;
+    padding-bottom: 72px;
+}
+.portfolio-list {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 22px;
 }
 .portfolio-item{
+    padding-bottom: 32px;
+    width: calc((100%-48px)/3);
+    margin-bottom: 48px;
+}
+.portfolio-name{
+    margin-bottom: 8px;
+}
+.portfolio-description{
     border: 1px solid #E7E9FC;
         background: #FFF;
+        padding: 32px 16px;
 }
 .link{ /*для всіх лінків*/
     text-decoration: none;
@@ -138,6 +250,7 @@ background:#FFF;
 
 button{ /*для всіх кнопок*/
     cursor: pointer;
+    display: block
 }
 
 button:hover{
@@ -145,4 +258,10 @@ button:hover{
       }
 button:focus{
     background: #404BBF;
+}
+.down-part-content{
+    padding: 100px 0px;
+}
+.bottom-link{
+    margin-bottom: 18px;
 }
