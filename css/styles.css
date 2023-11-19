@@ -1,0 +1,148 @@
+body{
+    font-family: 'Roboto', sans-serif;
+    color: #434455;
+    background-color: #FFF;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02;
+}
+.page-header{
+    background-color: #FFF;
+}
+.logo{   /*для логотипу*/
+    color: #4D5AE5;
+        font-family: 'Raleway', sans-serif;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 1.17;
+        /* 116.667% */
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+}
+.logo-part{  /*перша чатина логотипу колір*/
+    color: #2E2F42;
+}
+.down-logo{
+    color: #F4F4FD;
+}
+.menu, .contact-list, .features-list, .team-list, .portfolio-list{
+list-style-type: none;
+}
+.menu-item{ /*меню навігації*/
+    color:#2E2F42;
+    /* Body Medium */
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    /* 150% */
+    letter-spacing: 0.02em;
+}
+.menu-item:hover{
+    color:  #404BBF;
+    text-decoration-line: underline;
+}
+.menu-item:focus{
+    color: #404BBF;
+}
+.contacts{
+    font-style: normal;
+}
+
+.contact-look{ /*для телефонy та пошти в навігації*/
+    /* Body */
+    color: #434455;
+    font-size: 16px;
+    line-height: 1.5;
+    /* 150% */
+    letter-spacing: 0.02em;
+}
+
+.contact-look:hover{
+    color: #404BBF;
+}
+.contact-look:focus {
+    color:#404bbf;
+}
+.banner, .down-part{
+    background: #2E2F42;
+}
+.page-title{ /*Заголовок на банері зверху*/
+    color: #FFF;
+    /* Header 1 */
+    text-align: center;
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 1.07;
+    /* 107.143% */
+    letter-spacing: 0.02em;
+}
+
+.button{ /*Кнопка під заголовком*/
+    background:  #4D5AE5;
+    color: #FFF;
+    /* Button Text */
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    /* 150% */
+    letter-spacing: 0.04em;
+}
+
+.features-name, .team-name, .portfolio-name{
+    color:#2E2F42;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2;
+    /* 120% */
+    letter-spacing: 0.02em;
+}
+
+.team{
+    background: #F4F4FD;
+}
+.features-title, .team-title, .portfolio-title{
+    color:#2E2F42;
+    /* Header 2 */
+    font-size: 36px;
+    text-align: center;
+    font-weight: 700;
+    line-height: 1.11;
+    /* 111.111% */
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+}
+
+
+.team-item{
+background:#FFF;
+}
+.features-text, .team-job, .portfolio-text, .down-text{
+    /* Body */
+    font-size: 16px;
+    line-height: 1.5;
+    /* 150% */
+    letter-spacing: 0.02em;
+}
+
+.down-text{
+    color: #F4F4FD;
+}
+.portfolio-item{
+    border: 1px solid #E7E9FC;
+        background: #FFF;
+}
+.link{ /*для всіх лінків*/
+    text-decoration: none;
+}
+
+button{ /*для всіх кнопок*/
+    cursor: pointer;
+}
+
+button:hover{
+        background: #404BBF;
+      }
+button:focus{
+    background: #404BBF;
+}
