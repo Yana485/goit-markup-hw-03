@@ -47,6 +47,7 @@ img{
 }
 .page-header{
     background-color: #FFF;
+    border-bottom: 1px solid #E7E9FC;
 }
 .logo{   /*для логотипу*/
     color: #4D5AE5;
