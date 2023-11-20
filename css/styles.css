@@ -76,13 +76,13 @@ list-style-type: none;
     display: flex;
     gap: 40px;
 }
-.contact-list-item{
+.menu-item, .contact-list-item{
     padding-top: 24px;
     padding-bottom: 24px;
 }
-.menu-item{
+/* .menu-item{
     padding: 24px 0 24px;
-}
+} */
 .menu-link{ /*меню навігації*/
     color:#2E2F42;
     /* Body Medium */
