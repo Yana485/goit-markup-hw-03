@@ -76,7 +76,7 @@ list-style-type: none;
     display: flex;
     gap: 40px;
 }
-.menu-item, .contact-list-item{
+.menu, .contact-list-item{
     padding-top: 24px;
     padding-bottom: 24px;
 }
