@@ -74,7 +74,7 @@ list-style-type: none;
 
 .menu, .contact-list{
     display: flex;
-    column-gap: 40px;
+    gap: 40px;
 }
 .menu-item, .contact-list-item{
     padding-top: 24px;
