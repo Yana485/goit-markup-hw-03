@@ -157,6 +157,10 @@ list-style-type: none;
     letter-spacing: 0.04em;
     margin-right: auto;
         margin-left: auto;
+        min-width: 169px;
+        height: 56px;
+        border: none;
+        border-radius: 4px;
 }
 
 .section{
