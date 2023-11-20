@@ -36,13 +36,14 @@ img{
     width: 1158px;
     margin-left: auto;
     margin-right: auto;
-    padding: 0 15px;
+    padding-left: 15px;
+    padding-right: 15px;
     justify-content: space-between;
 }
 .header-container{
     display: flex;
-    padding-top: 24px;
-        padding-bottom: 24px;
+    /* padding-top: 24px;
+        padding-bottom: 24px; */
 }
 .page-header{
     background-color: #FFF;
