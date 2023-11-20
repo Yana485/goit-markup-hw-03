@@ -42,8 +42,6 @@ img{
 }
 .header-container{
     display: flex;
-    /* padding-top: 24px;
-        padding-bottom: 24px; */
 }
 .page-header{
     background-color: #FFF;
@@ -68,7 +66,7 @@ img{
 }
 .top-nav{
     display: flex;
-    
+    align-items: center;
 }
 .menu, .contact-list, .features-list, .team-list, .portfolio-list{
 list-style-type: none;
@@ -77,6 +75,10 @@ list-style-type: none;
 .menu, .contact-list{
     display: flex;
     column-gap: 40px;
+}
+.menu-item, .contact-list-item{
+    padding-top: 24px;
+        padding-bottom: 24px;
 }
 .menu-link{ /*меню навігації*/
     color:#2E2F42;
