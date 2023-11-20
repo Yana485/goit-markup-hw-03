@@ -267,8 +267,9 @@ button:focus{
     background: #404BBF;
 }
 .down-part-content{
-    padding: 100px 0px;
+    padding: 100px 0;
 }
 .bottom-link{
-    margin-bottom: 18px;
+    display: inline-block;
+    margin-bottom: 16px;
 }
