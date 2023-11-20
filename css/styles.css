@@ -138,7 +138,7 @@ list-style-type: none;
 }
 .features-list{
     display: flex;
-    column-gap: 24px;
+    gap: 24px;
 }
 .features-list-item{
     width: calc((100%-72)/4);
