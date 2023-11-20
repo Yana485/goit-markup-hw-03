@@ -81,7 +81,7 @@ list-style-type: none;
     padding-bottom: 24px;
 }
 .menu-item{
-    padding: 24px 0;
+    padding: 24px 0 24px;
 }
 .menu-link{ /*меню навігації*/
     color:#2E2F42;
