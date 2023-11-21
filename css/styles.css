@@ -76,13 +76,10 @@ list-style-type: none;
     display: flex;
     gap: 40px;
 }
-.menu-item, .contact-list-item{
+.contact-list-item{
     padding-top: 24px;
     padding-bottom: 24px;
 }
-/* .menu-item{
-    padding: 24px 0 24px;
-} */
 .menu-link{ /*меню навігації*/
     color:#2E2F42;
     /* Body Medium */
@@ -90,6 +87,7 @@ list-style-type: none;
     font-weight: 500;
     line-height: 1.5;
     /* 150% */
+    padding: 24px 0 24px;
     letter-spacing: 0.02em;
 }
 .menu-link:hover{
